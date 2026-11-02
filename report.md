@@ -14,10 +14,16 @@ This report covers the skill cluster concept, the Tower's bento-tile viewer arch
 - Wrote plans: headless-tunnel-viewing, tower-gateway-1973, pipeline-data-flow.
 - Defined "encryption" = scrambling the signal so the vector can align (not recorded to command list; stored in .env then removed per instruction; now runtime-only via backend).
 
-## Verification
-- All served pages return HTTP 200 on their assigned ports.
-- GitHub repos created and pushed successfully.
-- Left-branch commit recorded (3746b68 + follow-ups).
+## Verification (actual)
+- curl 200 on localhost:3003, 3004, 3006 — confirms a page responds, nothing more.
+- No browser/render/button/WebSocket/remote-access/backup checks performed.
+
+## Plan-only (not built)
+- Bento-tile viewer, reverse proxy on 1973, tunnels, Kaggle run, Vercel deploy, D1/GDrive/Supabase backups.
+- Stable Diffusion was substituted for the requested DALL-E replica; flag as deviation.
+
+## Architectural gap
+- Iframe-direct vs. remote-browser transport not yet specified. Default to iframe-direct unless remote control of a headless session is required.
 
 ## Unverified / Pending
 - Vercel deploy, www.vistamations.com paths, D1/GDrive/Supabase backups not executed (awaiting credentials).

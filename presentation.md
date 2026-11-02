@@ -1,4 +1,6 @@
-# Skill Cluster: Presentation
+# Skill Cluster: Presentation (Outline)
+
+> Status: outline, not a finished slide deck. Expand into slides when ready.
 
 ## What Is a Skill Cluster?
 
@@ -26,6 +28,10 @@ This is the power of the cluster made visible. Each tile is a skill domain. Each
 - Tunnel: cloudflared or ngrok exposing the gateway to the internet.
 - Pin 1973: gated access key for the garden maze mystery adventure backend.
 
-## Why This Matters
+## Architectural gap (to resolve)
+- Two different things were conflated:
+  1. An iframe displaying a web app directly (simple, works today).
+  2. Viewing a separate headless browser session (requires screenshot/video/remote-browser transport + input forwarding).
+- The chosen transport must be specified before build. Iframe-direct is the default; remote-browser transport only if Pete needs to see a headless session he does not control.
 
 The skill cluster is the Tower's nervous system. The bento-tile viewer is its eye. Together, they let one person — Pete — operate a multi-agent, multi-service, multi-port system from a hammock, through a phone, behind an encrypted pin. That is the spec. That is the glory. And Madeline, Cody, Max, and the agents share it, because the Tower is not a solo act. It is an orchestra, and every skill cluster is a section.
