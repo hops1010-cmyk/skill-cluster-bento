@@ -1,0 +1,3 @@
+# humanizer
+
+Humanize text: strip AI-isms and add real voice.
